@@ -326,7 +326,7 @@ The macros have additional parameters:
 
 - ``ENV``: set environment variables (same syntax as ``APPEND_ENV``).
 
-- ``TIMEOUT``: set a test timeout in second. The default for GTests is 60 seconds.
+- ``TIMEOUT``: Add extra time to the default timeout of 60s. This has to be specified as a floating point number (``TIMEOUT=60.0`` will result in a timeout of 120 seconds)  This timeout is per-test, not a timeout for the full gtest binary.
 
 - ``SKIP_TEST``: skip this test (will be shown as "passed" in the console output).
 
